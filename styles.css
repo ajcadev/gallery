@@ -1,0 +1,31 @@
+.gallery {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+	overflow: hidden;
+	padding: 60px 0;
+}
+
+.gallery-title {
+	font-size: 2rem;
+	margin-bottom: 1em;
+}
+
+.gallery-container {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap; /*para que os flex-items possam fluir para outra linha */
+
+}
+
+.gallery-picture {
+	min-width: 200px;
+	flex-basis: 320px;
+	flex-grow: 1; /*para que o espaço que sobra seja dividido entre os flex-items */
+}
+
+.gallery-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* para a imagem não deformar uma vez que width e height foram alterados */
+}
